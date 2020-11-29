@@ -1,0 +1,38 @@
+{
+  "name": "azure_poc",
+  "version": "1.0.0",
+  "description": "azure poc templates",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akku1998/Azure_poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akku1998/Azure_poc/issues"
+  },
+  "homepage": "https://github.com/akku1998/Azure_poc#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "popper.js": "^1.16.1",
+    "rename": "^1.0.4"
+  }
+}

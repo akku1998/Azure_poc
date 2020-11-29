@@ -1,0 +1,32 @@
+.search_table-wrapper{
+.table-responsive{
+    max-height: 300px;
+    margin-bottom: px2rem(30);
+    }
+}
+.add-member-form{
+    .form-group{
+        margin-bottom: px2rem(30);
+    }
+}
+// .border{
+//     width: 85px;
+//     height: auto;
+//     margin: 0 auto;
+//     border-radius: 50%;
+//     &:after{
+//         content: '';
+//         border-radius: inherit; /* !importanté */
+//         background: linear-gradient(to right, red, orange);
+//     }
+// }
+
+
+
+// .table{
+//     thead{
+//         th{
+//             border-bottom: none;
+//         }
+//     }
+// }

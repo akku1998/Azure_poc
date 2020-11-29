@@ -1,0 +1,33 @@
+
+.site-button{
+    display: block;
+    background-color: $blue;
+    color: $white;
+    font-size: px2rem(16);
+    font-weight: 600;
+    border-radius: px2rem(40);
+    padding: px2em(10) px2em(60);
+}
+.m-left{
+    margin-left: auto;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.btn-hamburger{
+    position: fixed;
+    top: px2rem(50);
+    margin-left: px2rem(-53);
+    background: $medium-blue;
+    color: $white;
+    padding: px2rem(6) px2rem(6);
+    border-color: $medium-blue;
+    border-radius: 0;
+    &:focus{
+        box-shadow: none !important;
+    }
+    .fa-bars:before{
+        content: '\f0c9';
+        font-family: FontAwesome;
+    }
+}

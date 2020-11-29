@@ -1,0 +1,233 @@
+sidebar-main
+
+
+.site_sidebar-main{
+    background-color: $light-blue;
+    padding: px2rem(54) 0 px2rem(54) px2rem(9);
+    &_link{
+        color: $white;
+        text-decoration: none;
+        font-family: $title-font;
+        font-size: px2rem(12);
+        font-weight: 600;
+        letter-spacing: px2em(1);
+        margin-bottom: px2em(30);
+        padding: px2rem(12) px2rem(10) px2rem(13) px2rem(20);
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.3s;
+    }
+    &_icon{
+        margin-right: px2rem(22);
+    }
+    &_link--dashboard{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0e4';
+        }
+    }
+    &_link--team-dashboard{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0e4';
+        }
+    }
+    &_link--role{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f007';
+        }
+    }
+    &_link--bu{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f1ad';
+        }
+    }
+    &_link--team{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0fe';
+        }
+    }
+    &_link--resources{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0c0';
+        }
+    }
+    &_link-title{
+        position: absolute;
+    }
+}
+
+sidebar-header
+
+%margin-top-bottom{
+    margin: px2em(5) 0;
+    color: $white;
+}
+.site_sidebar{
+    &-wrapper{
+        width: 100%;
+    }
+    &-header{
+        background:  linear-gradient(180deg, #4E56C4 0%, #4E56C4 100%);
+        border-radius: 0 px2rem(30) 0 0 ;
+        text-align: center;
+        padding: px2rem(30) px2rem(25);
+        &_profile{
+            width: 85px;
+            height: auto;
+            margin: 0 auto;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            background-image: linear-gradient(#4E56C4 , #4E56C4), radial-gradient(circle at top left, #C5CAF4, #4E56C4, #BABABA);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            img{
+                width: 83px;
+                height: 85px;
+                border-radius: 50%;
+                position: relative;
+            }
+        }
+        &_name{
+            @extend %margin-top-bottom;
+            margin-top: px2rem(12);
+        }
+        &_email{
+            font-size: px2rem(10);
+            @extend %margin-top-bottom;
+            transition: all 0.3s;
+        }
+        &_team{
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: px2em(5);
+            border-radius: px2rem(8);
+            letter-spacing: px2em(1);
+            @extend %margin-top-bottom;
+        }
+        &_p{
+            margin-bottom: px2rem(7);
+        }
+    }
+
+}
+
+sidebar-footer
+
+.site_sidebar-footer{
+    background: linear-gradient(180deg, #4E56C4 0%, #4E56C4 100%);
+    border-radius: 0 0 px2rem(20) 0;
+    &_logo{
+        text-align: center;
+        padding: px2rem(35) 0;
+    }
+}
+
+collapse-sidebar
+
+.active_sidebar{
+    min-width: 132px;
+    max-width: 132px;
+    text-align: center;
+    .site_sidebar-header_p{
+        display: none;
+    }
+    .site_sidebar-header_team{
+        display: none;
+    }
+    .site_sidebar-main_link-title{
+        display: none;
+    }
+    .site_sidebar-main_icon{
+        font-size: 2em;
+    }
+}
+
+html file - 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+          $('#sidebarCollapse').on('click', function() {
+              $('#sidebar').toggleClass('active_sidebar');
+          })
+        });
+    </script>
+</head>
+<body>
+    <div class="site_wrapper">
+        <aside class="site_sidebar" id="sidebar">
+            <div class="site_sidebar-wrapper">
+                <div class="site_sidebar-header">
+                    <div class="site_sidebar-header_profile">
+                        <img src="images/aditya.jpg" alt="sidebar image" class="img-fluid">
+                    </div>
+                    <h6 class="site_sidebar-header_name">John Doe</h6>
+                    <p class="site_sidebar-header_p"><span class="site_sidebar-header_email">richamohanty1998@gmail.com</span></p>
+                    <h5 class="site_sidebar-header_team">IDS Digital Solution</h5>
+                </div>
+                <div class="site_sidebar-main">
+                    <nav>
+                        <ul class="nav flex-column site_sidebar-main_nav">
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link active" href="#"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--dashboard"></span><span class="site_sidebar-main_link-title">Dashboard</span></a></li>
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link" href="#"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--team-dashboard"></span><span class="site_sidebar-main_link-title">Team Dashboard</span></a></li>
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link" href="./role-addition.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--role"></span><span class="site_sidebar-main_link-title">Role Addition</span></a></li>
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link" href="./bu-addition.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--bu"></span><span class="site_sidebar-main_link-title">BU Addition</span></a></li>
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link" href="./add-member.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--team"></span><span class="site_sidebar-main_link-title">Team Addition</span></a></li>
+                            <li class="nav-item"><a class="nav-link site_sidebar-main_link" href="./add-member.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--resources"></span><span class="site_sidebar-main_link-title">New Resources Addition</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site_sidebar-footer">
+                    <div class="site_sidebar-footer_logo">
+                        <img src="images/footer_logo.png" class="img-responsive" alt="footer logo">
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="site_main-content">
+            <button class="btn btn-primary btn-hamburger" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+            <header class="site_header">
+                <h1 class="site_header-title">Add Member</h1>
+                <hr class="site_header-line">
+            </header>
+            <div class="add-member-form">
+                <form action="#" method="post" class="search_form">
+                    <div class="form-group row">
+                        <label for="divisions" class="col-sm-4 col-form-label">Role Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control search_form-input" id="project" placeholder="New project">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="project" class="col-sm-4 col-form-label">Costing</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control search_form-input" id="project" placeholder="New project">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="project" class="col-sm-4 col-form-label">Description</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control search_form-input" id="project" placeholder="New project">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary site-button m-left">Save</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

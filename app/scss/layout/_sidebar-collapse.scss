@@ -1,0 +1,17 @@
+.active_sidebar{
+    min-width: 132px;
+    max-width: 132px;
+    text-align: center;
+    .site_sidebar-header_p{
+        display: none;
+    }
+    .site_sidebar-header_team{
+        display: none;
+    }
+    .site_sidebar-main_link-title{
+        display: none;
+    }
+    .site_sidebar-main_icon{
+        font-size: 2em;
+    }
+}

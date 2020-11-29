@@ -1,0 +1,39 @@
+/******* Fonts ********/
+
+$title-font: 'Montserrat', sans-serif;
+$primary-font: 'Poppins', sans-serif;
+
+
+
+$default-font-size: 16;
+
+/****** Color *******/
+
+$black: #000;
+$black-two: #262A40;
+$white: #fff;
+$white-two: #EDEEF5;
+$light-blue: #5960C7;
+$blue: #407BF8;
+$medium-blue: #4E56C4;
+$dark-gray: #6D6D6D;
+$medium-gray: #DADADA;
+$light-gray: #E3E3E3;
+
+$medium-darker-gray: #777987;
+$medium-dark-gray: #aeaeae;
+$medium-light-gray: #C4C4C4;
+
+/***** Breakpoints *****/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

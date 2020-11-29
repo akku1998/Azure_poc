@@ -1,0 +1,37 @@
+.search_form{
+    margin: px2rem(30) 0 px2rem(30) 0;
+    label{
+        font-family: $title-font;
+        font-size: px2rem(18);
+        font-weight: 400;
+        color: $black;
+    }
+    &-input{
+        border: 1px solid $light-gray;
+        border-radius: 0;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+        font-size: px2rem(14);
+        color: $black;
+        height: calc(1.9em + .75rem + 2px);
+    }
+    &-dropdown{
+        &_btn{
+            @extend .search_form-input;
+            position: relative;
+            text-align: left;
+            cursor: pointer;
+            &:after{
+                content: '';
+                position: absolute;
+                right: 10px;
+                top: 11px;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 8px solid $black;
+            }
+        }
+        .dropdown-menu{
+            width: 100%;
+        }
+    }
+}

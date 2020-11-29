@@ -1,0 +1,47 @@
+@font-face {
+    $path: './../../../Azure_poc/app/fonts/font-awesome/fonts/';
+    font-family: 'FontAwesome';
+    src: url($path + 'fontawesome-webfont.eot?v=4.7.0');
+    src: url($path + 'fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url($path + 'fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url($path + 'fontawesome-webfont.woff?v=4.7.0') format('woff'), url($path + 'fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url($path + 'fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.fa-edit{
+  &:before{
+      content: '\f044';
+      font-family: FontAwesome;
+      cursor: pointer;
+  }
+}
+.fa-trash{
+  &:before{
+      content: '\f1f8';
+      font-family: FontAwesome;
+      cursor: pointer;
+  }
+}
+.fa-plus{
+  &:before{
+      content: '\f067';
+      font-family: FontAwesome;
+      cursor: pointer;
+  }
+}
+.fa-sort{
+  &:after{
+      content: '\f0dc';
+      font-family: FontAwesome;
+  }
+}

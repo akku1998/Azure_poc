@@ -1,0 +1,8 @@
+.fa-edit{
+    &:hover, &:active, &:focus{
+        color: $light-blue;
+    }
+}
+.fa-trash{
+    @extend .fa-edit;
+}

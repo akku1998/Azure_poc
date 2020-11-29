@@ -1,0 +1,19 @@
+h1{
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: px2rem(30);
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+}
+h5{
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: px2rem(16);
+}
+h6{
+    font-family: $title-font;
+    font-size: px2rem(14);
+    font-weight: 600;
+    text-transform: uppercase;
+}

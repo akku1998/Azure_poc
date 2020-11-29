@@ -1,0 +1,27 @@
+.site_wrapper{
+    width: 100%;
+    display: flex;
+}
+.site_sidebar{
+    // display: flex;
+    max-width: px2rem(250);
+    min-width: px2rem(250);
+    transition: all 0.3s;
+    position: fixed;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-y: auto;
+    background: #4E56C4;
+    border-radius: 0 30px 30px 0;
+}
+.site_main-content{
+    width: 100%;
+    margin: px2rem(47) px2rem(58) px2rem(30) px2rem(58);
+    position: relative;
+    transition: all 0.3s;
+    margin-left: px2rem(185);
+}
+.margin{
+    margin-left: px2rem(300);
+}
+

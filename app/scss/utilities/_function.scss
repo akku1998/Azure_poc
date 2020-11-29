@@ -1,0 +1,6 @@
+@function px2em($size-in-px, $base-size: $default-font-size){
+    @return ($size-in-px/ $base-size) + em;
+}
+@function px2rem($size-in-px){
+    @return ($size-in-px/ $default-font-size) + rem;
+}

@@ -1,0 +1,65 @@
+
+.site_sidebar-main{
+    background-color: $light-blue;
+    padding: px2rem(12) 0 px2rem(12) px2rem(9);
+    &_link{
+        color: $white;
+        text-decoration: none;
+        font-family: $title-font;
+        font-size: px2rem(12);
+        font-weight: 600;
+        letter-spacing: px2em(1);
+        margin-bottom: px2em(15);
+        padding: px2rem(12) px2rem(10) px2rem(13) px2rem(20);
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.3s;
+        &:hover{
+            background: linear-gradient(268.91deg,#d2d2d2 .13%,rgba(0,0,0,0.1) 97.84%);
+            border-radius: 30px 0 0 30px;
+            color: $white;
+        }
+    }
+    &_icon{
+        margin-right: px2rem(22);
+    }
+    &_link--dashboard{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0e4';
+        }
+    }
+    &_link--team-dashboard{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0e4';
+        }
+    }
+    &_link--role{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f007';
+        }
+    }
+    &_link--bu{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f1ad';
+        }
+    }
+    &_link--team{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0fe';
+        }
+    }
+    &_link--resources{
+        &:before{
+            font-family: FontAwesome;
+            content: '\f0c0';
+        }
+    }
+    &_link-title{
+        position: absolute;
+    }
+}

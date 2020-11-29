@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+          $('#sidebarCollapse').on('click', function() {
+              $('#sidebar').toggleClass('active_sidebar');
+             // $('#main').css('marginLeft', '185px');
+             $('#main').toggleClass('margin');
+          })
+        });
+    </script>
+</head>
+<body>
+    <div class="site_wrapper">
+        <aside class="site_sidebar" id="sidebar">
+            <div class="site_sidebar-wrapper">
+                <div class="site_sidebar-header">
+                    <div class="site_sidebar-header_profile">
+                        <img src="images/aditya.jpg" alt="sidebar image" class="img-fluid">
+                    </div>
+                    <h6 class="site_sidebar-header_name">John Doe</h6>
+                    <p class="site_sidebar-header_p"><span class="site_sidebar-header_email">richamohanty1998@gmail.com</span></p>
+                    <h5 class="site_sidebar-header_team">IDS Digital Solution</h5>
+                </div>
+                <div class="site_sidebar-main">
+                    <nav class="nav flex-column site_sidebar-main_nav">
+                        <a class="nav-link site_sidebar-main_link active" href="#"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--dashboard"></span><span class="site_sidebar-main_link-title">Dashboard</span></a>
+                        <a class="nav-link site_sidebar-main_link" href="#"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--team-dashboard"></span><span class="site_sidebar-main_link-title">Team Dashboard</span></a>
+                        <a class="nav-link site_sidebar-main_link" href="./role-addition.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--role"></span><span class="site_sidebar-main_link-title">Role Addition</span></a>
+                        <a class="nav-link site_sidebar-main_link" href="./bu-addition.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--bu"></span><span class="site_sidebar-main_link-title">BU Addition</span></a>
+                        <a class="nav-link site_sidebar-main_link" href="./add-member.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--team"></span><span class="site_sidebar-main_link-title">Team Addition</span></a>
+                        <a class="nav-link site_sidebar-main_link" href="./add-member.html"><span class="fa fa-lg site_sidebar-main_icon site_sidebar-main_link--resources"></span><span class="site_sidebar-main_link-title">New Resources Addition</span></a>
+                    </nav>
+                </div>
+                <div class="site_sidebar-footer">
+                    <div class="site_sidebar-footer_logo">
+                        <img src="images/footer_logo.png" class="img-responsive" alt="footer logo">
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="site_main-content margin" id="main">
+            <button class="btn btn-primary btn-hamburger" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+            <header class="site_header">
+                <h1 class="site_header-title">Update Capacity Planning</h1>
+                <hr class="site_header-line">
+            </header>
+            <form action="#" method="post" class="search_form">
+                <div class="form-group row">
+                    <div class="col">
+                        <div class="row">
+                            <label for="divisions" class="col-sm-4 col-form-label">Division</label>
+                            <div class="col-sm-8">
+                                <select name="selectbox" id="selectid" class="form-control search_form-input">
+                                    <option value="one">HPS</option>
+                                    <option value="one">two</option>
+                                    <option value="one">three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <label for="bu" class="col-sm-4 col-form-label">BU</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="search_form-input form-control" id="bu" placeholder="BU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <label for="project" class="col-sm-4 col-form-label">Type of project</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control search_form-input" id="project" placeholder="New project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary site-button m-auto">Display</button>
+            </form>
+            <div class="search_table-wrapper">
+                <div class="table-responsive">
+                    <table class="table search_table">
+                        <thead class="search_table-thead">
+                            <tr>
+                                <th scope="col" rowspan="2" class="search_table-th search_table-checkbox"><input class="search_table-checkbox" type="checkbox" value="" id="defaultCheck1"></th>
+                                <th scope="col" rowspan="2" class="search_table-th search_table-info">Team Name<span class="fa fa-sort"></span></th>
+                                <th scope="col" rowspan="2" class="search_table-th search_table-info">Role<span class="fa fa-sort"></span></th>
+                                <th scope="col" rowspan="2" class="search_table-th search_table-info">Resource Name<span class="fa fa-sort"></span></th>
+                                <th scope="col" colspan="3" class="search_table-th">2020-Q4</th>
+                                <th scope="col" colspan="3" class="search_table-th">2020-Q1</th>
+                                <th scope="col" colspan="3" class="search_table-th">2020-Q2</th>
+                                <th scope="col" rowspan="2" class="search_table-th"></th>
+                                <th scope="col" rowspan="2" class="search_table-th"></th>
+                                <th scope="col" rowspan="2" class="search_table-th"></th>
+                            </tr>
+                            <tr class="search_table-q-row">
+                                <th class="search_table-th search_table-q1">Oct</th>
+                                <th class="search_table-th search_table-q1">Nov</th>
+                                <th class="search_table-th search_table-q1">Dec</th>
+                                <th class="search_table-th search_table-q2">Jan</th>
+                                <th class="search_table-th search_table-q2">Feb</th>
+                                <th class="search_table-th search_table-q2">Mar</th>
+                                <th class="search_table-th search_table-q3">May</th>
+                                <th class="search_table-th search_table-q3">Apr</th>
+                                <th class="search_table-th search_table-q3">Jun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="search_table-checkbox"><input type="checkbox" value="" id="defaultCheck1"></td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>IDS Drupal factory</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>Backend</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>jayeshree</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td><span class="fa fa-edit search_table-edit"></span></td>
+                                <td><span class="fa fa-trash search_table-delete"></span></td>
+                                <td><span></span></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="search_table-checkbox"><input type="checkbox" value="" id="defaultCheck1"></td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>IDS Drupal factory</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>backend</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-bold-text">
+                                    <select class="search_table-select">
+                                        <option>Jayeshree</option>
+                                        <option>two</option>
+                                    </select>
+                                </td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q1"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q2"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td class="search_table-td-q3"><input type="text" name="input" value="3" class="search_table-text"></td>
+                                <td><span class="fa fa-edit search_table-edit"></span></td>
+                                <td><span class="fa fa-trash search_table-delete"></span></td>
+                                <td><span></span></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="search_table-checkbox"><input type="checkbox" value="" id="defaultCheck1"></td>
+                                <td class="search_table-bold-text">IDS Drupal</td>                                </td>
+                                <td class="search_table-bold-text">Backend</td>
+                                <td class="search_table-bold-text">Jayeshree</td>
+                                <td class="search_table-td-q1">3</td>
+                                <td class="search_table-td-q1">3</td>
+                                <td class="search_table-td-q1">3</td>
+                                <td class="search_table-td-q2">3</td>
+                                <td class="search_table-td-q2">3</td>
+                                <td class="search_table-td-q2">3</td>
+                                <td class="search_table-td-q3">3</td>
+                                <td class="search_table-td-q3">3</td>
+                                <td class="search_table-td-q3">3</td>
+                                <td><span class="fa fa-edit search_table-edit"></span></td>
+                                <td><span class="fa fa-trash search_table-delete"></span></td>
+                                <td><span class="fa fa-plus search_table-plus"></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-primary site-button m-auto">Add Data</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
